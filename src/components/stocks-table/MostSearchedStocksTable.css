@@ -1,0 +1,71 @@
+.stocks-table-container {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #f8f9fa;
+}
+
+.stocks-table-container h2 {
+  color: #1d1d1d;
+  margin-bottom: 10px;
+}
+
+.api-endpoint {
+  background: #eaf4fc;
+  padding: 10px;
+  border-left: 4px solid #007bff;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* Table styling */
+.table-responsive table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-responsive th,
+.table-responsive td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Table header */
+.table-responsive th {
+  background-color: #343a40;
+  color: white;
+}
+
+.table-responsive tr:hover {
+  background-color: #f1f1f1;
+}
+
+.change-positive {
+  color: green;
+}
+
+.change-negative {
+  color: red;
+}
+
+.last-trade {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .table-responsive th,
+  .table-responsive td {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
