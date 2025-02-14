@@ -11,6 +11,7 @@ import setting from "../assets/images/setting.svg";
 import { Link } from "react-router-dom";
 
 import MostSearchedStocksTable from "./stocks-table/MostSearchedStocksTable";
+import PriceTable from "./price-table/PriceTable";
 
 function Dashboard() {
   const getCurrentDate = () => {
@@ -73,13 +74,33 @@ function Dashboard() {
                 <h4>Explore Stock Trends</h4>
               </section>
             </div>
-            <div className="price-alert tt">
-              <section>
-                <img src={price} alt="price alert" />
+            {/* Price alert */}
+            <div
+              style={{
+                backgroundColor: "white",
+                width: "60%",
+                height: "40vh",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  gap: "10px",
+                }}
+              >
+                <img
+                  src={price}
+                  style={{
+                    width: 30,
+                  }}
+                  alt="price alert"
+                />
                 <h4>Price Alert</h4>
-              </section>
+              </div>
+              <PriceTable />
             </div>
           </div>
+
           <div className="stock2 tt">
             <section>
               <img src={track} alt="Trend Icon" />
